@@ -116,7 +116,70 @@ TODO : Add one or more images to explain the MVC pattern
 !SLIDE down-open
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 !SLIDE
-## Creation of a Rails app
+## How to create
+
+## a new
+
+## Rails app
+
+
+!SLIDE
+## STEP 1 : You need Ruby :-)
+<p>&nbsp;</p>
+<p class="fragment">We will not cover <a href="https://www.ruby-lang.org/en/downloads/">how to install it here</a></p>
+<p>&nbsp;</p>
+<p class="fragment">Visit <a href="http://installrails.com/">http://installrails.com</a>...it's awesome!</p>
+<p>&nbsp;</p>
+<p class="fragment">TIP: Use <strong><a href="https://github.com/sstephenson/rbenv">rbenv</a></strong>, <strong><a href="http://rvm.io/">rvm</a></strong>, <strong><a href="https://github.com/postmodern/chruby">chruby</a></strong> or something similar to <strong>manage your Ruby versions</strong></p>
+
+<pre class="fragment"><code class="bash">
+<%= include 'code/02_create_rails_app/01a_rbenv_install_list.sh' %>
+</code></pre>
+
+<pre class="fragment"><code class="bash">
+<%= include 'code/02_create_rails_app/01b_rbenv_install_ruby.sh' %>
+</code></pre>
+
+!SLIDE
+## STEP 2 : Install Rails (using **gem** cli)
+
+<pre class="fragment"><code class="bash">
+<%= include 'code/02_create_rails_app/02_gem_install_rails.sh' %>
+</code></pre>
+
+
+!SLIDE
+## STEP 3 : Create your app (using **rails** cli)
+
+<pre class="fragment"><code class="bash">
+<%= include 'code/02_create_rails_app/03a_rails_new.sh' %>
+</code></pre>
+
+<pre class="fragment"><code class="bash">
+<%= include 'code/02_create_rails_app/03b_rails_new_specific_version.sh' %>
+</code></pre>
+
+<pre class="fragment"><code class="bash">
+<%= include 'code/02_create_rails_app/03c_rails_new_in_current_dir.sh' %>
+</code></pre>
+
+
+!SLIDE
+## STEP 4 : Test that your app was created!
+<p>&nbsp;</p>
+<p class="fragment">Run your app</p>
+
+<pre class="fragment"><code class="bash">
+<%= include 'code/02_create_rails_app/04_rails_server.sh' %>
+</code></pre>
+
+<p class="fragment">... and then visit <a href="http://localhost:3000">http://localhost:3000</a> from your browser</p>
+
+
+!SLIDE
+## You rock!
+<p>&nbsp;</p>
+<p class="fragment">Now go and make some really AWESOME stuff!</p>
 
 
 !SLIDE down-close
@@ -133,7 +196,7 @@ TODO : Add one or more images to explain the MVC pattern
 * Adding CSS and JavaScript to the Rails App
 * Asset Pipeline
 * Reading data from JSON for the "Members" page
-* Rendering semi-static pages like the "Home" page
+* Rendering semi-static pages from Markdown like the "Home" page
 
 <p>&nbsp;</p>
 <p class="fragment">until next time...</p>
@@ -145,7 +208,7 @@ TODO : Add one or more images to explain the MVC pattern
 !SLIDE
 ## Thank you!
 <p>&nbsp;</p>
-<h3 class="fragment">Liked the presentation? </h3>
+<h3 class="fragment">Liked the presentation?</h3>
 <p>&nbsp;</p>
 <p class="fragment">
   Source: <a href="http://github.com/xarisd/rails-basics-01"> github.com/xarisd/rails-basics-01</a>
