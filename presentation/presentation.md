@@ -314,8 +314,93 @@ TODO : Add one or more images to explain the MVC pattern
 
 !SLIDE
 ## STEP 4 : Refresh your browser and enjoy!
-
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <p class="fragment">We don't even have to restart our server :-) </p>
+
+
+!SLIDE
+## User Story #2 : Members List
+<p>&nbsp;</p>
+<div class="fragment">
+  <blockquote>
+    As a <strong>VERY</strong> curious guy (or girl)
+    <br/>
+    I want to visit <a href="http://thessrb.io/members">http://thessrb.io/members</a>
+    <br/>
+    In order to see who is behind this <strong>fiasko</strong>!
+  </blockquote>
+</div>
+
+!SLIDE
+## So...
+<p>&nbsp;</p>
+<p class="fragment">When someone visits <a href="http://thessrb.io/members">http://thessrb.io/members</a> he will be presented with the members list as seen in <strong>_design/members.html</strong></p>
+<p>&nbsp;</p>
+<h3 class="fragment">AGAIN...</h3>
+<p>&nbsp;</p>
+<p class="fragment">We will try to use as much "original code" as we can</p>
+<p>&nbsp;</p>
+<p class="fragment">We will <strong>not use the Asset Pipeline</strong></p>
+
+!SLIDE
+## Similar steps apply...
+
+
+
+!SLIDE
+## Create controller, action and view
+<p>&nbsp;</p>
+<p class="fragment">1. Create controller <strong>MembersController</strong> at <strong>app/controllers/members_controller.rb</strong></p>
+<p>&nbsp;</p>
+<p class="fragment">2. Add a public (empty) method <strong>index</strong> to the controller</p>
+<p>&nbsp;</p>
+<p class="fragment">3. Create a view at <strong>app/views/members/index.html.erb</strong></p>
+<p>&nbsp;</p>
+<p class="fragment">4. Copy the contents of <strong>_design/members.html</strong> to the view</p>
+<p>&nbsp;</p>
+<p class="fragment">5. Tell the controller NOT to use a <strong>layout</strong> (for now)</p>
+
+
+!SLIDE
+<pre><code class="ruby">
+<%= include 'code/05_add_members_list/app/controllers/members_controller.rb' %>
+</code></pre>
+
+<pre><code class="html">
+<%= include 'code/05_add_members_list/app/views/members/index.html.erb' %>
+</code></pre>
+
+
+
+!SLIDE
+## Tell Rails routing to use them
+<p>&nbsp;</p>
+<ul>
+  <li class="fragment">Add <code>get 'members.html', :to => 'members#index'</code> to <strong>config/routes.rb</strong></li>
+  <ul>
+    <li class="fragment"><strong>"members"</strong> points to <strong>MembersController</strong></li>
+    <li class="fragment"><strong>"index"</strong> points to <strong>#index</strong> method</li>
+  </ul>
+</ul>
+<p>&nbsp;</p>
+<pre class="fragment"><code class="ruby">
+<%= include 'code/05_add_members_list/config/routes.rb' %>
+</code></pre>
+
+!SLIDE
+## And finally...
+<p>&nbsp;</p>
+<p class="fragment">Refresh your browser and enjoy the <strong>Gang</strong>!</p>
+<p>&nbsp;</p>
+<p class="fragment">Oh! If you are a member...We expect a Pull Request from you...Get LISTED!</p>
+
+!SLIDE
+## Done with development
+<p>&nbsp;</p>
+<h2 class="fragment">Almost...</h2>
+<p>&nbsp;</p>
+<p class="fragment">Let's see if the links are working</p>
 
 
 !SLIDE down-close
