@@ -187,6 +187,33 @@ TODO : Add one or more images to explain the MVC pattern
 !SLIDE down-open
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 !SLIDE
+## Basic App Structure
+
+<div class="fragment">
+<% left do %>
+  <%= image 'images/rails_app_structure.png' %>
+<% end %>
+<% right do %>
+  * **app/assets**
+  <br/> for CSS, JavaScript and images
+  * **app/controllers**
+  <br/> for Controllers
+  * **app/models**
+  <br/> for Models
+  * **app/views**
+  <br/> for Views
+  * **public**
+  <br/> for static files served AS IS by the web server
+<% end %>
+
+</div>
+
+
+!SLIDE down-close
+
+!SLIDE down-open
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+!SLIDE
 ## Things we will cover **next time**
 
 <p>&nbsp;</p>
