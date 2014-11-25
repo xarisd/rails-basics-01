@@ -177,9 +177,22 @@ TODO : Add one or more images to explain the MVC pattern
 
 
 !SLIDE
-## You rock!
+## We rock!
 <p>&nbsp;</p>
-<p class="fragment">Now go and make some really AWESOME stuff!</p>
+<p class="fragment">Now, let's go and make some really AWESOME stuff!</p>
+
+!SLIDE
+## WAIT !!!
+
+!SLIDE
+## What have we done?
+<p>&nbsp;</p>
+<p class="fragment">Rails automatically generated a skeleton application code for us.</p>
+
+!SLIDE
+## Nice!
+<p>&nbsp;</p>
+<p class="fragment">Let's explore it</p>
 
 
 !SLIDE down-close
@@ -208,6 +221,57 @@ TODO : Add one or more images to explain the MVC pattern
 
 </div>
 
+!SLIDE down-close
+
+!SLIDE down-open
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+!SLIDE
+## Let's build <br/><br/> our 2 first pages now...
+
+
+!SLIDE
+## User Story #1 : Home Page
+<p>&nbsp;</p>
+<div class="fragment">
+  <blockquote>
+    As a curious guy (or girl)
+    <br/>
+    I want to visit <a href="http://thessrb.io">http://thessrb.io</a>
+    <br/>
+    In order to read all the basic information regarding <strong>thessrb</strong>
+  </blockquote>
+</div>
+
+
+!SLIDE
+## Meanwhile...
+<p>&nbsp;</p>
+<p class="fragment">Our super-duper-awesome Web Designer has the mockups ready!</p>
+<p>&nbsp;</p>
+<p class="fragment">Let's see them!</p>
+
+!SLIDE
+## So...
+<p>&nbsp;</p>
+<p class="fragment">When someone visits <a href="http://thessrb.io">http://thessrb.io (the root of our site)</a> he will be presented with the home page as seen in <strong>_design/home.html</strong></p>
+
+<p>&nbsp;</p>
+<p class="fragment">We will try to use as much "original code" as we can</p>
+<p>&nbsp;</p>
+<p class="fragment">We will <strong>not use the Asset Pipeline</strong></p>
+
+
+!SLIDE
+## STEP 1 : Copy static files for styling
+
+<ul>
+  <li class="fragment"><strong>_design/stylesheets</strong> --> <strong>public/stylesheets</strong></li>
+  <li class="fragment"><strong>_design/Images</strong> --> <strong>public/Images</strong></li>
+</ul>
+
+<pre class="fragment"><code class="bash">
+<%= include 'code/04_add_home_page/01_copy_static_files.sh' %>
+</code></pre>
 
 !SLIDE down-close
 
