@@ -263,15 +263,60 @@ TODO : Add one or more images to explain the MVC pattern
 
 !SLIDE
 ## STEP 1 : Copy static files for styling
-
+<p>&nbsp;</p>
 <ul>
   <li class="fragment"><strong>_design/stylesheets</strong> --> <strong>public/stylesheets</strong></li>
   <li class="fragment"><strong>_design/Images</strong> --> <strong>public/Images</strong></li>
 </ul>
-
+<p>&nbsp;</p>
 <pre class="fragment"><code class="bash">
 <%= include 'code/04_add_home_page/01_copy_static_files.sh' %>
 </code></pre>
+
+
+!SLIDE
+## STEP 2 : Create controller, action and view
+<p>&nbsp;</p>
+<p class="fragment">1. Create controller <strong>HomeController</strong> at <strong>app/controllers/home_controller.rb</strong></p>
+<p>&nbsp;</p>
+<p class="fragment">2. Add a public (empty) method <strong>index</strong> to the controller</p>
+<p>&nbsp;</p>
+<p class="fragment">3. Create a view at <strong>app/views/home/index.html.erb</strong></p>
+<p>&nbsp;</p>
+<p class="fragment">4. Copy the contents of <strong>_design/home.html</strong> to the view</p>
+<p>&nbsp;</p>
+<p class="fragment">5. Tell the controller NOT to use a <strong>layout</strong> (for now)</p>
+
+!SLIDE
+<pre><code class="ruby">
+<%= include 'code/04_add_home_page/app/controllers/home_controller.rb' %>
+</code></pre>
+
+<pre><code class="html">
+<%= include 'code/04_add_home_page/app/views/home/index.html.erb' %>
+</code></pre>
+
+
+!SLIDE
+## STEP 3 : Tell Rails to use them (a.k.a Routing)
+<p>&nbsp;</p>
+<ul>
+  <li class="fragment">Add <code>root 'home#index'</code> to <strong>config/routes.rb</strong></li>
+  <ul>
+    <li class="fragment"><strong>"home"</strong> points to <strong>HomeController</strong></li>
+    <li class="fragment"><strong>"index"</strong> points to <strong>#index</strong> method</li>
+  </ul>
+</ul>
+<p>&nbsp;</p>
+<pre class="fragment"><code class="ruby">
+<%= include 'code/04_add_home_page/config/routes.rb' %>
+</code></pre>
+
+!SLIDE
+## STEP 4 : Refresh your browser and enjoy!
+
+<p class="fragment">We don't even have to restart our server :-) </p>
+
 
 !SLIDE down-close
 
