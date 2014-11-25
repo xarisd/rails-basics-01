@@ -177,9 +177,22 @@ TODO : Add one or more images to explain the MVC pattern
 
 
 !SLIDE
-## You rock!
+## We rock!
 <p>&nbsp;</p>
-<p class="fragment">Now go and make some really AWESOME stuff!</p>
+<p class="fragment">Now, let's go and make some really AWESOME stuff!</p>
+
+!SLIDE
+## WAIT !!!
+
+!SLIDE
+## What have we done?
+<p>&nbsp;</p>
+<p class="fragment">Rails automatically generated a skeleton application code for us.</p>
+
+!SLIDE
+## Nice!
+<p>&nbsp;</p>
+<p class="fragment">Let's explore it</p>
 
 
 !SLIDE down-close
@@ -207,6 +220,102 @@ TODO : Add one or more images to explain the MVC pattern
 <% end %>
 
 </div>
+
+!SLIDE down-close
+
+!SLIDE down-open
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+!SLIDE
+## Let's build <br/><br/> our 2 first pages now...
+
+
+!SLIDE
+## User Story #1 : Home Page
+<p>&nbsp;</p>
+<div class="fragment">
+  <blockquote>
+    As a curious guy (or girl)
+    <br/>
+    I want to visit <a href="http://thessrb.io">http://thessrb.io</a>
+    <br/>
+    In order to read all the basic information regarding <strong>thessrb</strong>
+  </blockquote>
+</div>
+
+
+!SLIDE
+## Meanwhile...
+<p>&nbsp;</p>
+<p class="fragment">Our super-duper-awesome Web Designer has the mockups ready!</p>
+<p>&nbsp;</p>
+<p class="fragment">Let's see them!</p>
+
+!SLIDE
+## So...
+<p>&nbsp;</p>
+<p class="fragment">When someone visits <a href="http://thessrb.io">http://thessrb.io (the root of our site)</a> he will be presented with the home page as seen in <strong>_design/home.html</strong></p>
+
+<p>&nbsp;</p>
+<p class="fragment">We will try to use as much "original code" as we can</p>
+<p>&nbsp;</p>
+<p class="fragment">We will <strong>not use the Asset Pipeline</strong></p>
+
+
+!SLIDE
+## STEP 1 : Copy static files for styling
+<p>&nbsp;</p>
+<ul>
+  <li class="fragment"><strong>_design/stylesheets</strong> --> <strong>public/stylesheets</strong></li>
+  <li class="fragment"><strong>_design/Images</strong> --> <strong>public/Images</strong></li>
+</ul>
+<p>&nbsp;</p>
+<pre class="fragment"><code class="bash">
+<%= include 'code/04_add_home_page/01_copy_static_files.sh' %>
+</code></pre>
+
+
+!SLIDE
+## STEP 2 : Create controller, action and view
+<p>&nbsp;</p>
+<p class="fragment">1. Create controller <strong>HomeController</strong> at <strong>app/controllers/home_controller.rb</strong></p>
+<p>&nbsp;</p>
+<p class="fragment">2. Add a public (empty) method <strong>index</strong> to the controller</p>
+<p>&nbsp;</p>
+<p class="fragment">3. Create a view at <strong>app/views/home/index.html.erb</strong></p>
+<p>&nbsp;</p>
+<p class="fragment">4. Copy the contents of <strong>_design/home.html</strong> to the view</p>
+<p>&nbsp;</p>
+<p class="fragment">5. Tell the controller NOT to use a <strong>layout</strong> (for now)</p>
+
+!SLIDE
+<pre><code class="ruby">
+<%= include 'code/04_add_home_page/app/controllers/home_controller.rb' %>
+</code></pre>
+
+<pre><code class="html">
+<%= include 'code/04_add_home_page/app/views/home/index.html.erb' %>
+</code></pre>
+
+
+!SLIDE
+## STEP 3 : Tell Rails to use them (a.k.a Routing)
+<p>&nbsp;</p>
+<ul>
+  <li class="fragment">Add <code>root 'home#index'</code> to <strong>config/routes.rb</strong></li>
+  <ul>
+    <li class="fragment"><strong>"home"</strong> points to <strong>HomeController</strong></li>
+    <li class="fragment"><strong>"index"</strong> points to <strong>#index</strong> method</li>
+  </ul>
+</ul>
+<p>&nbsp;</p>
+<pre class="fragment"><code class="ruby">
+<%= include 'code/04_add_home_page/config/routes.rb' %>
+</code></pre>
+
+!SLIDE
+## STEP 4 : Refresh your browser and enjoy!
+
+<p class="fragment">We don't even have to restart our server :-) </p>
 
 
 !SLIDE down-close
