@@ -14,7 +14,7 @@ Presentation is made with slideshow gem and reveal.js library (links at the "Too
   <pre><code>bundle install</code></pre>
 
   You will also need to install manualy the slideshow-reveal.js template in order to build the presentation <br/>(see <https://github.com/avillafiorita/slideshow-reveal.js#installation>)
-4. Edit the presentation files (**presentation/ruby-basics.md** and the ruby files inside **presentation/code** directory)
+4. Edit the presentation files (**presentation/presentation.md** and the ruby files inside **presentation/code** directory)
 5. Build the presentation
   <pre><code>rake</code></pre>
 6. Test the presentation in browser (opens automatically through rake default task)
