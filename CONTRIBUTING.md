@@ -2,8 +2,7 @@
 
 #### I love pull requests. Here's a quick guide
 
-1. Fork the repository (want to be a member and not have to fork? [Check
-   how]())
+1. Fork the repository
 2. Create a topic branch, do some work, push it, and create a pull
    request.
 
