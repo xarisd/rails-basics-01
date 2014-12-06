@@ -15,23 +15,20 @@ custom_css: presentation
 
 !SLIDE
 ## Who am I?
-
-<p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3 class="fragment">
   Haris Dimitriou (<strong>xarisd</strong>)
 </h3>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
 <p class="fragment">
-  CTO and co-founder @  <a href="http://www.polyptychon.gr">Polyptychon</a> (<a href="http://polyptychon.gr">polyptychon.gr</a>)
+  Ruby developer<span class="fragment">...among other things</span>
 </p>
 <p>&nbsp;</p>
 <p class="fragment">
-  <br>
-  ...just a developer
-  <br>
-  <br>
+  CTO and co-founder @<a href="http://www.polyptychon.gr">Polyptychon</a> (<a href="http://polyptychon.gr">polyptychon.gr</a>)
+</p>
+<p>&nbsp;</p>
+<p class="fragment">
   <a href="http://github.com/xarisd">github.com/xarisd</a>
   <br>
   <a href="http://twitter.com/xarisd">twitter.com/xarisd</a>
@@ -45,15 +42,11 @@ custom_css: presentation
 
 <p>&nbsp;</p>
 
-* MVC : The VERY basics
+* MVC : The basics
 * Creation of a Rails app
-* Gems and Bundler : a simplified explanation
 * Basic Rails application structure
-* Routing
-* Controllers and Actions
-* Views
-* Very simple deploy to Heroku
-* What we will cover **next time**
+* VERY basic Routing
+* Controllers, Actions and Views
 
 
 !SLIDE
@@ -73,7 +66,6 @@ custom_css: presentation
 * Background Jobs
 * ...
 
-<p>&nbsp;</p>
 <p class="fragment">maybe next time(s)...</p>
 
 !SLIDE down-open
