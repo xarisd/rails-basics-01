@@ -86,7 +86,7 @@ custom_css: presentation
 ## MVC and Rails
 
 <p class="fragment">MVC is an old paradigm</p>
-<p class="fragment">Rails uses MVC variant 2</p>
+<p class="fragment">Rails uses MVC variant called "Model 2"</p>
 
 <p class="fragment">Rails MVC is a very SIMPLE concept to grab</p>
 <p class="fragment">Rails MVC is a very POWERFULL way to build applications</p>
@@ -94,20 +94,32 @@ custom_css: presentation
 !SLIDE
 ## "Rails MVC" is bullet proof
 
-<p class="fragment">"Rails like" MVC is all over the place</p>
+<p class="fragment">"Rails' flavor" MVC is all over the place</p>
 
 <ul>
   <li class="fragment">Django (Python)</li>
   <li class="fragment">Laravel, Symphony, ... (PHP)</li>
   <li class="fragment">ASP.NET MVC (.Net Framework)</li>
   <li class="fragment">Play! (Java/Scala)</li>
+  <li class="fragment">Sails.js (Javascript/Node.js)</li>
   <li class="fragment">...</li>
 </ul>
 
 !SLIDE
 ## MVC : Simple Explanation
 
-TODO : Add one or more images to explain the MVC pattern
+<% left do %>
+  <img class="fragment" src="images/MVC-Diagram.png" alt="MVC Diagram" width="550px" style="border: none;" />
+<% end %>
+<% right do %>
+  <ol>
+    <li class="fragment">Browser makes a <code>request</code></li>
+    <li class="fragment"><code>Controller</code> recieves the request</li>
+    <li class="fragment"><code>Controller</code> talks with the <code>Model(s)</code></li>
+    <li class="fragment"><code>Controller</code> prepares the <code>View</code> for rendering</li>
+    <li class="fragment"><code>Response</code> (HTML, JSON, etc) is returned to the Browser</li>
+  </ol>
+<% end %>
 
 
 
@@ -128,9 +140,10 @@ TODO : Add one or more images to explain the MVC pattern
 <p>&nbsp;</p>
 <p class="fragment">We will not cover <a href="https://www.ruby-lang.org/en/downloads/">how to install it here</a></p>
 <p>&nbsp;</p>
-<p class="fragment">Visit <a href="http://installrails.com/">http://installrails.com</a>...it's awesome!</p>
-<p>&nbsp;</p>
-<p class="fragment">TIP: Use <strong><a href="https://github.com/sstephenson/rbenv">rbenv</a></strong>, <strong><a href="http://rvm.io/">rvm</a></strong>, <strong><a href="https://github.com/postmodern/chruby">chruby</a></strong> or something similar to <strong>manage your Ruby versions</strong></p>
+<p class="fragment">
+  TIP: Use <strong><a href="https://github.com/sstephenson/rbenv">rbenv</a></strong>, <strong><a href="http://rvm.io/">rvm</a></strong>, <strong><a href="https://github.com/postmodern/chruby">chruby</a></strong> or something similar
+  <br/>to <strong>manage your Ruby versions</strong>
+</p>
 
 <pre class="fragment"><code class="bash">
 <%= include 'code/02_create_rails_app/01a_rbenv_install_list.sh' %>
