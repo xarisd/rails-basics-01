@@ -3,9 +3,9 @@ Rails Basics 01
 
 This is a presentation about how to build a simple "static like" site with Ruby on Rails.
 
-You can enjoy it online at <http://xarisd.io/presentations/rails-basics-01.html>.
-
 It is the first part of a series of presentations about the basics of the [Ruby on Rails](http://rubyonrails.org/) web framework.
+
+You can enjoy it online at <http://xarisd.io/presentations/rails-basics-01.html>
 
 ## About this repository
 
