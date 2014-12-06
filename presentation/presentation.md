@@ -442,7 +442,7 @@ custom_css: presentation
 !SLIDE
 ## Thank you!
 <p>&nbsp;</p>
-<h3 class="fragment">Liked the presentation?</h3>
+<p class="fragment">Liked the presentation?</p>
 <p>&nbsp;</p>
 <p class="fragment">
   Source: <a href="http://github.com/xarisd/rails-basics-01"> github.com/xarisd/rails-basics-01</a>
@@ -450,13 +450,14 @@ custom_css: presentation
 <p>&nbsp;</p>
 <p>
 <p class="fragment">
-  View it online: <a href="http://xarisd.io/presentations/rails-basics-01.html">xarisd.io/presentations/rails-basics-01.html</a>
+  View it online: <a href="http://xarisd.io/presentations/rails-basics-01">xarisd.io/presentations/rails-basics-01</a>
 </p>
 <p>&nbsp;</p>
 <p class="fragment">
-  Comments and feedback:<br/>
-  Send a tweet (or a "bad" direct message :-))<br/>
-  <a href="http://twitter.com/xarisd">@xarisd</a>
+  Have something to say?
+</p>
+<p class="fragment">
+  Send me a tweet or direct message: <a href="http://twitter.com/xarisd">@xarisd</a>
 </p>
 <p>&nbsp;</p>
 <p class="fragment">Questions?</p>
